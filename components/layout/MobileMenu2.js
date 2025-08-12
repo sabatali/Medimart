@@ -43,6 +43,7 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                                         <li><Link href="/"onClick={handleMobileMenu}>Home Page One</Link></li>
                                         <li><Link href="/index-2"onClick={handleMobileMenu}>Home Page Two</Link></li>
                                         <li><Link href="/index-3"onClick={handleMobileMenu}>Home Page Three</Link></li>
+                                        <li><Link href="/index-4"onClick={handleMobileMenu}>Home Page Four</Link></li>
                                         <li><Link href="/index-onepage"onClick={handleMobileMenu}>OnePage Home</Link></li>
                                     </ul>
                                     <div className={isActive.key === 1 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(1)}>

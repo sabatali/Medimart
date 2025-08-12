@@ -18,6 +18,7 @@ export default function Menu() {
                         <li><Link href="/">Home Page One</Link></li>
                         <li><Link href="/index-2">Home Page Two</Link></li>
                         <li><Link href="/index-3">Home Page Three</Link></li>
+                        <li><Link href="/index-4">Home Page Four</Link></li>
                         <li><Link href="/onepage">OnePage Home</Link></li>
                     </ul>
                 </li>
