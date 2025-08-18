@@ -109,6 +109,14 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
             <li><Link href="mailto:info@example.com">info@example.com</Link></li>
           </ul>
         </div>
+        
+        {/* Request Pickup Button in Mobile Menu */}
+        <div className="mobile-menu-btn">
+          <Link href="/" className="theme-btn btn-one" onClick={handleMobileMenu}>
+            <span>Request A Pickup</span>
+          </Link>
+        </div>
+        
           {/*Social Links*/}
           <div className="social-links">
           <ul className="clearfix">
@@ -122,6 +130,40 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
       </nav>
     </div>{/* End Mobile Menu */}
       <div className="nav-overlay" style={{ display: `${isSidebar ? "block" : "none"}` }} onClick={handleSidebar} />
+      
+      <style jsx>{`
+        .mobile-menu-btn {
+          padding: 20px 30px;
+          text-align: center;
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
+          margin-top: 20px;
+        }
+        
+        .mobile-menu-btn .theme-btn {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+          border: none !important;
+          color: white !important;
+          padding: 12px 30px !important;
+          font-weight: 600 !important;
+          font-size: 14px !important;
+          border-radius: 50px !important;
+          transition: all 0.3s ease !important;
+          display: inline-block !important;
+          text-decoration: none !important;
+          box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+        }
+        
+        .mobile-menu-btn .theme-btn:hover {
+          background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%) !important;
+          transform: translateY(-2px) !important;
+          box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+          color: white !important;
+        }
+        
+        .mobile-menu-btn .theme-btn span {
+          color: white !important;
+        }
+      `}</style>
     </>
   );
 };

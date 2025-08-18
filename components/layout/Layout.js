@@ -1,7 +1,8 @@
 
 'use client'
-import { useEffect, useState } from "react";
 import dynamic from 'next/dynamic';
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 // Dynamic import for the WOW library
 const WOW = dynamic(() => import('wowjs/dist/wow'));
@@ -63,8 +64,93 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
 
                 {(footerStyle === 1 || !footerStyle) && <Footer1 />}
                 {footerStyle === 2 && <Footer2 />}
+                
+                {/* Mobile Pickup Button - Only show for Header4 */}
+                {headerStyle === 4 && (
+                    <div className="mobile-pickup-btn">
+                        <Link href="/" className="theme-btn btn-one">
+                            <span>Request A Pickup</span>
+                        </Link>
+                    </div>
+                )}
             </div>
             <BackToTop scroll={scroll} />
+            
+            <style jsx>{`
+                .mobile-pickup-btn {
+                    display: none;
+                }
+                
+                @media (max-width: 991px) {
+                    .mobile-pickup-btn {
+                        display: block;
+                        position: fixed;
+                        bottom: 80px;
+                        right: 20px;
+                        z-index: 999;
+                        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                        border-radius: 50px;
+                        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+                        animation: mobilePulse 2s infinite;
+                        transition: all 0.3s ease;
+                    }
+                    .mobile-pickup-btn .theme-btn {
+                        background: transparent !important;
+                        border: none !important;
+                        color: white !important;
+                        padding: 12px 24px !important;
+                        font-weight: 600 !important;
+                        font-size: 14px !important;
+                        margin: 0 !important;
+                        display: block !important;
+                        text-decoration: none !important;
+                    }
+                    .mobile-pickup-btn:hover {
+                        transform: translateY(-3px);
+                        box-shadow: 0 12px 35px rgba(102, 126, 234, 0.5);
+                    }
+                    .mobile-pickup-btn .theme-btn:hover {
+                        background: transparent !important;
+                        color: white !important;
+                    }
+                }
+                
+                @media (max-width: 768px) {
+                    .mobile-pickup-btn {
+                        bottom: 70px;
+                        right: 15px;
+                    }
+                    .mobile-pickup-btn .theme-btn {
+                        padding: 10px 20px !important;
+                        font-size: 13px !important;
+                    }
+                }
+                
+                @media (max-width: 480px) {
+                    .mobile-pickup-btn {
+                        bottom: 60px;
+                        right: 10px;
+                    }
+                    .mobile-pickup-btn .theme-btn {
+                        padding: 8px 16px !important;
+                        font-size: 12px !important;
+                    }
+                    .mobile-pickup-btn .theme-btn span {
+                        font-size: 12px !important;
+                    }
+                }
+                
+                @keyframes mobilePulse {
+                    0%, 100% { 
+                        transform: scale(1); 
+                        opacity: 1; 
+                    }
+                    50% { 
+                        transform: scale(1.05); 
+                        opacity: 0.9; 
+                    }
+                }
+            `}</style>
         </>
     );
 }
