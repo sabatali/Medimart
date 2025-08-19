@@ -123,7 +123,7 @@ export default function Testimonial() {
                   gap: '15px'
                 }}>
                   <figure className="author-thumb" style={{ margin: 0 }}>
-                    <img src="assets/images/resource/author-1.jpg" alt="" style={{
+                    <img src="assets/images/home4/doctor2.jpeg" alt="doc 1" style={{
                       width: '60px',
                       height: '60px',
                       borderRadius: '50%',
@@ -212,7 +212,7 @@ export default function Testimonial() {
                   gap: '15px'
                 }}>
                   <figure className="author-thumb" style={{ margin: 0 }}>
-                    <img src="assets/images/resource/author-2.jpg" alt="" style={{
+                    <img src="assets/images/home4/doctor1.jpg" alt="" style={{
                       width: '60px',
                       height: '60px',
                       borderRadius: '50%',
@@ -301,7 +301,7 @@ export default function Testimonial() {
                   gap: '15px'
                 }}>
                   <figure className="author-thumb" style={{ margin: 0 }}>
-                    <img src="assets/images/resource/author-3.jpg" alt="" style={{
+                    <img src="assets/images/home4/doctor3.jpeg" alt="doct3" style={{
                       width: '60px',
                       height: '60px',
                       borderRadius: '50%',

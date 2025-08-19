@@ -30,7 +30,7 @@ export default function Banner() {
                 <div className="shape-4" style={{ backgroundImage: 'url(assets/images/shape/shape-32.png)' }}></div>
               </div>
               <figure className="image">
-                <img src="assets/images/banner/banner-img-2.png" alt="" />
+                <img src="assets/images/home4/top1.jpg" alt="" />
               </figure>
               <div className="text-box">
                 <h3>Medical Billing Expert</h3>
