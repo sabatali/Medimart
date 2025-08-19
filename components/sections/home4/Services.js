@@ -13,8 +13,8 @@ export default function Services() {
           <div className="col-lg-4 col-md-6 col-sm-12 service-block">
             <div className="service-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
               <div className="inner-box">
-                <div className="image-box">
-                  <figure className="image"><Link href="service-details"><img src="assets/images/service/service-1.jpg" alt="" /></Link></figure>
+                <div className="image-box ">
+                  <figure className="image"><Link href="service-details"><img src="assets/images/home4/services11.jpg" alt="services1" /></Link></figure>
                   <div className="icon-box"><i className="icon-15"></i></div>
                 </div>
                 <div className="lower-content">
@@ -28,7 +28,7 @@ export default function Services() {
             <div className="service-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
               <div className="inner-box">
                 <div className="image-box">
-                  <figure className="image"><Link href="service-details"><img src="assets/images/service/service-2.jpg" alt="" /></Link></figure>
+                  <figure className="image"><Link href="service-details"><img src="assets/images/home4/services2.jpg" alt="services2" /></Link></figure>
                   <div className="icon-box"><i className="icon-16"></i></div>
                 </div>
                 <div className="lower-content">
@@ -42,7 +42,7 @@ export default function Services() {
             <div className="service-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
               <div className="inner-box">
                 <div className="image-box">
-                  <figure className="image"><Link href="service-details"><img src="assets/images/service/service-3.jpg" alt="" /></Link></figure>
+                  <figure className="image"><Link href="service-details"><img src="assets/images/home4/services33.jpg" alt="3" /></Link></figure>
                   <div className="icon-box"><i className="icon-17"></i></div>
                 </div>
                 <div className="lower-content">

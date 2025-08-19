@@ -104,7 +104,7 @@ export default function Team() {
                     margin: 0
                   }}>
                     <Link href="team-details">
-                      <img src="assets/images/team/team-1.jpg" alt="" style={{ 
+                      <img src="assets/images/home4/team1.jpg" alt="" style={{ 
                         width: '100%', 
                         height: '280px',
                         objectFit: 'cover',
@@ -287,7 +287,7 @@ export default function Team() {
                     margin: 0
                   }}>
                     <Link href="team-details">
-                      <img src="assets/images/team/team-2.jpg" alt="" style={{ 
+                      <img src="assets/images/home4/team2.jpg" alt="" style={{ 
                         width: '100%', 
                         height: '280px',
                         objectFit: 'cover',
@@ -470,7 +470,7 @@ export default function Team() {
                     margin: 0
                   }}>
                     <Link href="team-details">
-                      <img src="assets/images/team/team-3.jpg" alt="" style={{ 
+                      <img src="assets/images/home4/team3.jpg" alt="teame3" style={{ 
                         width: '100%', 
                         height: '280px',
                         objectFit: 'cover',
@@ -653,7 +653,7 @@ export default function Team() {
                     margin: 0
                   }}>
                     <Link href="team-details">
-                      <img src="assets/images/team/team-4.jpg" alt="" style={{ 
+                      <img src="assets/images/home4/team4.jpg" alt="" style={{ 
                         width: '100%', 
                         height: '280px',
                         objectFit: 'cover',
